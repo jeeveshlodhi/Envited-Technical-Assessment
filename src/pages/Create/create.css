@@ -9,6 +9,9 @@
 .form{
     width: 40vw;
     height: 100vh;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
 }
 
 .form input{
@@ -22,3 +25,20 @@
     box-sizing: border-box;
     font-size: 14px;
  }
+button{
+    padding: .5rem 3rem;
+    border: none;
+    outline: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.create-main{
+    display: flex;
+    align-items: center;
+}
+
+@media only screen and (max-width:1000px){
+    .form{
+        width: 70vw;
+    }
+}

@@ -105,6 +105,10 @@
     font-size: 18px;
     line-height: 21px;
   }
+  .event-left-card-sign{
+    margin-right: 0px;
+    margin-left: auto;
+  }
 }
 
 @media only screen and (min-width: 500px) and (max-width: 1200px) {
