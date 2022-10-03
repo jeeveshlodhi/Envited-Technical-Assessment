@@ -1,0 +1,196 @@
+.event-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+.event-left {
+  /* height: 100vh; */
+  display: flex;
+  flex-direction: column;
+}
+.event-right {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+  /* height: 100vh; */
+}
+.event-right > img {
+  width: 500px;
+}
+.event-left-heading > h1 {
+  margin: 0;
+  font-style: normal;
+  padding: 0 1rem;
+  color: #240d57;
+}
+.event-left-heading > h6 {
+  font-style: normal;
+  margin: 0;
+  padding: 0.5rem 1rem;
+  color: #828282;
+}
+
+.event-left-card {
+  display: flex;
+  justify-content: center;
+  margin: 10px;
+}
+.event-left-card-icon {
+  width: 4rem;
+  height: 4rem;
+
+  background-color: white;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.event-left-card-icon > svg {
+  color: #8456ec;
+}
+.event-left-card-data {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0 1rem;
+}
+.event-left-card-icon > svg {
+  color: #8456ec;
+  font-size: 20px;
+}
+.event-left-card-data > div:first-child {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 18px;
+
+  color: #240d57;
+}
+.event-left-card-data > div:last-child {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16px;
+  /* identical to box height */
+
+  color: #4f4f4f;
+}
+
+.event-left-card-sign {
+  transform: rotate(90deg);
+  font-size: 20px;
+  font-weight: 600;
+}
+@media only screen and (min-width: 1200px) {
+  .event-left {
+    width: 50%;
+    align-items: center;
+    justify-content: flex-start;
+    height: 65vh;
+    text-align: left;
+  }
+  .event-left-card {
+    width: 50%;
+    justify-content: flex-start;
+  }
+  .event-left-heading > h1 {
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 55px;
+  }
+  .event-left-heading > h6 {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
+  }
+}
+
+@media only screen and (min-width: 500px) and (max-width: 1200px) {
+  .event-wrapper {
+    flex-direction: column-reverse;
+    min-width: 100vw;
+    min-height: 100vh;
+  }
+  .event-right {
+    width: 70vw;
+    margin-top: 2rem;
+  }
+  .event-right > img {
+    width: 95%;
+  }
+  .event-left {
+    padding: 1rem;
+    flex-wrap: wrap;
+    width: 70vw;
+  }
+  .event-left-heading > h1 {
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 55px;
+  }
+  .event-left-heading > h6 {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
+  }
+  .event-left-card {
+    width: 90vw;
+    box-sizing: content-box;
+    justify-content: flex-start;
+  }
+  .event-left-card-sign {
+    margin-right: 1rem;
+    margin-left: auto;
+  }
+  .event-left-card-data:div:first-child {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 21px;
+  }
+  .event-left-card-data:div:last-child {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .event-wrapper {
+    flex-direction: column-reverse;
+    min-width: 100vw;
+    min-height: 100vh;
+    justify-content: flex-end;
+  }
+  .event-right {
+    width: 100%;
+    top: 0;
+  }
+  .event-right > img {
+    width: 100%;
+  }
+  .event-left {
+    padding: 1rem;
+    flex-wrap: wrap;
+  }
+  .event-left-heading > h1 {
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 32px;
+  }
+  .event-left-heading > h6 {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+  }
+  .event-left-card {
+    width: 90vw;
+    box-sizing: content-box;
+    justify-content: flex-start;
+  }
+  .event-left-card-sign {
+    margin-right: 1rem;
+    margin-left: auto;
+  }
+}
